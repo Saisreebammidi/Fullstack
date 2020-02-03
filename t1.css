@@ -1,0 +1,19 @@
+table{
+	background-color: #996666;
+	border-style: solid;
+	border-color:black;
+	width:1350px;
+}
+
+th{
+	text-align: left;
+	border-style: solid;
+	text-align: center;
+}
+
+td{
+	
+	border-style: solid;
+	border-color: black;
+text-align: center;
+}
