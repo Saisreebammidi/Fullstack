@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+        <title>Jquery Intro</title>
+        <!--load j-query file-->
+        <script src="jquery-3.4.1.min.js"></script>
+        <!-- to perform some actions using j-query-->
+        <script>
+           $(document).ready(function(){
+               $("#btn1").mouseover(function(){
+                $("#d1").css("visibility","visible");
+                   $("#d1").slideDown(2000);
+               });              
+               $("#btn1").mouseout(function(){
+                   $("#d1").slideUp(1000);
+               });
+
+               $("#btn2").mouseover(function(){
+                $("#d2").css("visibility","visible");
+                   $("#d2").slideDown(2000);
+               });              
+               $("#btn2").mouseout(function(){
+                   $("#d2").slideUp(1000);
+               });
+
+               $("#btn3").mouseover(function(){
+                   $("#d3").css("visibility","visible").slideDown(2000);
+               });
+               $("#btn3").mouseout(function(){
+                   $("#d3").slideUp(1000);
+               });
+          });
+        </script>
+
+        <style>
+
+            .a1{
+                visibility: hidden;
+                display: none;
+            }
+
+            .btn-block{
+                background-color:coral;
+            }
+
+        </style>
+    </head>
+    <body>
+            <button id="btn1" class="btn btn-block btn-lg btn-primary">COLLEGE DETAILS</button>
+            <div id="d1" class="a1"><h1>gitam university hyderabad</h1></div>
+            <button id="btn2" class="btn btn-block btn-lg btn-primary">FEE STRUCTURE</button>
+            <div id="d2" class="a1"><h1>two lakh twenty five thousand</h1></div>
+            <button id="btn3" class="btn btn-block btn-lg btn-primary">VISION OF COLLEGE</button>
+            <div id="d3" class="a1"><h1>to make engineers</h1></div>
+    </body>
+</html>
