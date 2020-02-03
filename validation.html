@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<script type="text/javascript">
+			function username(){
+				var x=document.getElementById("txt1");
+				var pattern=RegExp("^[a-z A-Z 0-9 _ .]{6,15}$");
+				if(pattern.test(x.value)){
+					alert("sucessful");
+				}
+				else{
+					document.write("unsucessful");
+				}
+
+			}
+		</script>
+	
+</head>
+<body>
+	<input type="text" name="" id="txt1" />
+	<button onclick="username()">Submit
+	</button>
+</body>
+</html>
