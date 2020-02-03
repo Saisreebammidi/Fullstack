@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    var x=$("#txi1").val();
+                    
+                     //alert(x);
+                    $("#p1").css("visibility","visible");
+                    $("#p1").css("display","inline");
+                    $("#p1").html("error");
+
+                });
+
+            });
+        </script>
+        <style>
+            .a1{
+                visibility: hidden;
+                display: none;
+                color: brown;
+                font-size: medium;
+            }
+
+        </style>
+    </head>
+    <body>
+      
+            <input type="text" id="txi1"/>
+            <p class="a1"id="p1">show</p>
+            <button id="btn1">show me</button>
+       
+    </body>
+</html>
