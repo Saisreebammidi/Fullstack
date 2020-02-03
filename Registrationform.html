@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</link>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-striped">
+                 <tr>
+                    <th colspan="2" text-align:"centre">Registration page</th>
+                </tr>
+                <div class="col-md-2">
+                <tr>
+                    <td>username</td>
+                    <td><input id="txtUsername" placeholder="Enter your name" pattern="^[a-z A-Z 0-9 _ .]{6,15}$"/></td>
+                </tr>
+                <div class="col-md-2">
+                <tr>
+                    <td>email id</td>
+                    <td><input id="txtUsername" placeholder="Enter your name" pattern="^[a-z A-Z 0-9 _ .]{6,15}[@][a-z A-Z]{4,9}[.][a-z]{2,3}$"/></td>
+                </tr>
+            </div>
+            <div class="col-md-4">
+                <tr>
+                    <td>address</td>
+                    <td><textarea id="txtAddresss" placeholder="Enter your address"/></textarea></td>
+                </tr>
+        </div>
+        <div class="col-md-4">
+            <tr>
+                <td>mobile number</td>
+                <td><input id="number" placeholder="Enter your number" pattern="^[+][9][1][-][6-9][0-9]{9}$"/></td>
+            </tr>
+            </div>
+            <div class="col-md-4">
+                <tr>
+                    <td>password</td>
+                    <td>  <input id="txtPassword" placeholder="Enter yor password" type="password" pattern="^[a-z A-Z 0-9 ! $ . @]{8,15}$"/></td>
+                </tr>
+                </div>
+                <div class="col-md-4">
+                    <tr>
+                        <td><input id="button" type="button" name="submit" value="submit"/></td>
+                    </tr>
+                    </div>
+                    </>
+          
+    </table>
+    </body>
+</html>
