@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>jQuery page</title>
+        <script src="C:\Users\Saisree\Desktop\trainingwrk\jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                
+                $("#btn1").click(function()
+                {
+                    var x = $("#txt1").val();
+                    $("#cartOl").prepend("<li> "+  x  +" </li" );
+                        
+                        var count = $("#cartOl").children().length;
+                       alert(count);
+                       
+            });
+            $("#remove").click(function(){
+                $('#cartOl').remove();
+            });
+                
+                });
+                
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt1" />
+        <button id="btn1">Click</button>
+        <ol id="cartOl">
+          
+        </ol>
+        <button id="remove">Remove</button>
+    </body>
+</html>
