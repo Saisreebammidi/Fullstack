@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webpage</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css"></link>
+<style>
+	body{
+		background-image: url('hyd_campus.jfif');
+		background-size: cover;
+		background-position: no-repeat;
+		background-attachment: fixed;
+	}
+
+.a1{
+	text-align:right;
+}
+.container {
+	max-width: 1640px;
+
+}
+.m{
+	background-color: white;
+}
+.f{
+	font-style:bold;
+	font-size: 25px;
+	color:#3b020c;
+	text-align:center;
+	padding-top:10%;
+	padding-bottom: 20px;
+	
+}
+.p{
+	font-size: 25px;
+	color:#3b020c;
+	text-align:center;
+	padding-bottom: 20px;
+	
+}
+.b{
+	font-size: 25px;
+	color:#3b020c;
+	text-align:center;
+	padding-top: 20px;
+	
+}
+</style>
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+			function username(){
+				var x=$("#txtUsername").val();
+				var y=$("#txtPassword").val();
+				var pattern=RegExp("^[a-z A-Z 0-9 _ .]{6,15}$");
+				
+		        var pattern1=RegExp("^[a-z A-Z 0-9 ! $ . @]{8,15}$");
+				if(pattern.test(x.value))
+				{
+					if(pattern1.test(y.value))
+					{
+					alert("sucessfull");
+					}
+				    else{
+					document.write("wrong username!!");
+				    }
+				 }
+				else{
+					document.write("wrong password!!");
+				}
+			}
+		
+	
+</script>
+
+
+
+</head>
+<body>
+ 	<div class="container">
+ 		<div class="row m">
+ 			<div class="col-md-4 a2">
+ 				<img src="category-1.png"/>
+ 				<img src="naac-logo.png"/>
+ 			</div>
+ 			<div class="col-md-4">
+ 			<img src="GITAM-logo.png"/>
+ 			</div>
+ 			<div class="col-md-4 a1">
+ 				<img src="aicte.png"/>
+ 				<img src="excellence.png"/>
+ 			</div>
+ 		</div>
+ 		<div class="row ">
+ 			<div class="col-md-12">
+ 				<div id='cssmenu'>
+			
+	        	<ul>
+	        		<li class='active'><a href='d4.html'>Home</a></li>
+	        		<li><a href='aboutus.html'>About Us</a></li>
+	        		<li><a href='contactus.html'>Contact Us</a></li>
+	        		<li><a href='login.html'>Login </a></li>
+	        		<li><a href='register.html'>Register </a></li>
+	        	</ul>
+	    </div>
+	    <div class="fr">
+	<form>
+	    <div class="row f">
+	    	<div class="col-md-12">
+	    		username:
+                    <input id="txtUsername" type="text" placeholder="Enter your name"/>
+	    	</div>
+	    	</div>
+	    <div class="row p">
+	    	<div class="col-md-12">
+	    		password
+                     <input id="txtPassword" placeholder="Enter yor password" type="password" />
+	    	</div>
+	    </div>
+	    <div class="row b">
+	    	<div class="col-md-12">
+	    		<input type="button" value="submit" onclick="username()"/>
+	    		<h3> Not a user?<a href="register.html">sign in!</a></h3>
+	    	</div>
+	    </div>
+	</form>
+</div>
+	
+ 				
+ 			</div>
+ 		</div>
+ 	</div>
+
+</body>
+</html>
