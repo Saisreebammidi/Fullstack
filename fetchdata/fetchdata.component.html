@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row" style="margin-left: 150px;">
+        <div class="col-md-4" style="margin-top:-200px ;">
+<div >  
+    <h2>Wheather Forecast</h2>
+    Summary :  
+    <select  [(ngModel)]="Header.name" (ngModelChange)="Search(Header.name)">  
+         <option *ngFor="let prod of Header">{{prod.name}} </option>  
+     </select>  
+<div *ngIf="Header.name">  
+
+</div>  
+</div>  
+</div>
+<div class="col-md-4" style="margin-left: 20px;margin-top:-100px ;">
+<div>  
+<table class="TFtable" border=2>  
+<tr >   
+<th>Date</th> <th>Temp.(C)</th>  <th>Temp.(F)</th> <th>Summary</th>  
+</tr>  
+<tr  *ngFor="let Prod of Details">  
+<td>{{Prod.Date}}</td>  
+<td>{{Prod.Tempc}}</td>  
+<td>{{Prod.Tempf}}</td>  
+<td>{{Prod.summary}}</td>  
+</tr>  
+</table>  
+</div> 
+</div>
+</div>
+</div>
