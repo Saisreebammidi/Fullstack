@@ -1,0 +1,24 @@
+ul li
+{
+    list-style: none;
+    padding: 25px;
+}
+ul li a
+{
+    text-decoration: none;
+    color:blanchedalmond;
+    font-style: inherit;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: normal;
+}
+ul
+{
+    background-color: hsl(30, 3%, 14%);
+    width:30%;
+    height:100%;
+}
+ul li a:hover
+{
+    background-color: rgb(65, 64, 63);
+}
